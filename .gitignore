@@ -23,7 +23,7 @@ Podfile.lock
 Carthage/
 
 # Firebase
-# GoogleService-Info.plist
+GoogleService-Info.plist
 
 # User-specific
 .DS_Store

@@ -23,6 +23,11 @@
 		703B937B2DF20C7200EC7BE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93792DF20C7200EC7BE0 /* ViewController.swift */; };
 		703B93882DF20CBF00EC7BE0 /* DefaultNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93842DF20CBF00EC7BE0 /* DefaultNetworkService.swift */; };
 		703B93892DF20CBF00EC7BE0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93852DF20CBF00EC7BE0 /* NetworkService.swift */; };
+		703B938B2DF20E8200EC7BE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 703B938A2DF20E8200EC7BE0 /* GoogleService-Info.plist */; };
+		703B938E2DF2105500EC7BE0 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 703B938D2DF2105500EC7BE0 /* FirebaseCore */; };
+		703B93902DF2105500EC7BE0 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 703B938F2DF2105500EC7BE0 /* FirebaseRemoteConfig */; };
+		703B93982DF210B000EC7BE0 /* RemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93952DF210B000EC7BE0 /* RemoteConfigService.swift */; };
+		703B939A2DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93992DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,9 @@
 		703B93792DF20C7200EC7BE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		703B93842DF20CBF00EC7BE0 /* DefaultNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkService.swift; sourceTree = "<group>"; };
 		703B93852DF20CBF00EC7BE0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		703B938A2DF20E8200EC7BE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		703B93952DF210B000EC7BE0 /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
+		703B93992DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteConfigService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703B938E2DF2105500EC7BE0 /* FirebaseCore in Frameworks */,
+				703B93902DF2105500EC7BE0 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +95,7 @@
 		703B933F2DF2086E00EC7BE0 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				703B938A2DF20E8200EC7BE0 /* GoogleService-Info.plist */,
 				703B933B2DF2086E00EC7BE0 /* Assets.xcassets */,
 				703B933C2DF2086E00EC7BE0 /* Info.plist */,
 				703B933E2DF2086E00EC7BE0 /* LaunchScreen.storyboard */,
@@ -204,9 +215,27 @@
 		703B93872DF20CBF00EC7BE0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				703B93972DF210B000EC7BE0 /* Firebase */,
 				703B93862DF20CBF00EC7BE0 /* Network */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		703B93962DF210B000EC7BE0 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				703B93952DF210B000EC7BE0 /* RemoteConfigService.swift */,
+				703B93992DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		703B93972DF210B000EC7BE0 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				703B93962DF210B000EC7BE0 /* RemoteConfig */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +255,8 @@
 			);
 			name = OMDbCaseProject;
 			packageProductDependencies = (
+				703B938D2DF2105500EC7BE0 /* FirebaseCore */,
+				703B938F2DF2105500EC7BE0 /* FirebaseRemoteConfig */,
 			);
 			productName = OMDbCaseProject;
 			productReference = 703B931E2DF207FC00EC7BE0 /* OMDbCaseProject.app */;
@@ -255,6 +286,9 @@
 			);
 			mainGroup = 703B93152DF207FC00EC7BE0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 703B931F2DF207FC00EC7BE0 /* Products */;
 			projectDirPath = "";
@@ -272,6 +306,7 @@
 			files = (
 				703B93452DF2086E00EC7BE0 /* Assets.xcassets in Resources */,
 				703B93472DF2086E00EC7BE0 /* LaunchScreen.storyboard in Resources */,
+				703B938B2DF20E8200EC7BE0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703B939A2DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift in Sources */,
 				703B93422DF2086E00EC7BE0 /* AppDelegate.swift in Sources */,
 				703B935C2DF20B1700EC7BE0 /* MovieDetailDTO.swift in Sources */,
 				703B93432DF2086E00EC7BE0 /* SceneDelegate.swift in Sources */,
+				703B93982DF210B000EC7BE0 /* RemoteConfigService.swift in Sources */,
 				703B93732DF20C1A00EC7BE0 /* MovieRepository.swift in Sources */,
 				703B936B2DF20BCC00EC7BE0 /* MovieDetail.swift in Sources */,
 				703B935F2DF20B4C00EC7BE0 /* SearchResponseDTO.swift in Sources */,
@@ -520,6 +557,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		703B938D2DF2105500EC7BE0 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		703B938F2DF2105500EC7BE0 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 703B93162DF207FC00EC7BE0 /* Project object */;
 }
