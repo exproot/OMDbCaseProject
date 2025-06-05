@@ -20,7 +20,6 @@
 		703B936D2DF20BDC00EC7BE0 /* MovieDetailDTO+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B936C2DF20BDC00EC7BE0 /* MovieDetailDTO+Mapper.swift */; };
 		703B93732DF20C1A00EC7BE0 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93712DF20C1A00EC7BE0 /* MovieRepository.swift */; };
 		703B93752DF20C2200EC7BE0 /* MovieRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93742DF20C2200EC7BE0 /* MovieRepositoryImpl.swift */; };
-		703B937B2DF20C7200EC7BE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93792DF20C7200EC7BE0 /* ViewController.swift */; };
 		703B93882DF20CBF00EC7BE0 /* DefaultNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93842DF20CBF00EC7BE0 /* DefaultNetworkService.swift */; };
 		703B93892DF20CBF00EC7BE0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93852DF20CBF00EC7BE0 /* NetworkService.swift */; };
 		703B938B2DF20E8200EC7BE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 703B938A2DF20E8200EC7BE0 /* GoogleService-Info.plist */; };
@@ -28,6 +27,12 @@
 		703B93902DF2105500EC7BE0 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 703B938F2DF2105500EC7BE0 /* FirebaseRemoteConfig */; };
 		703B93982DF210B000EC7BE0 /* RemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93952DF210B000EC7BE0 /* RemoteConfigService.swift */; };
 		703B939A2DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93992DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift */; };
+		703B93A42DF214AE00EC7BE0 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93A32DF214AE00EC7BE0 /* SplashViewModel.swift */; };
+		703B93A82DF2167700EC7BE0 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93A72DF2167700EC7BE0 /* SplashViewController.swift */; };
+		703B93AA2DF218F800EC7BE0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93A92DF218F800EC7BE0 /* AppCoordinator.swift */; };
+		703B93AE2DF21CBA00EC7BE0 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93AD2DF21CBA00EC7BE0 /* SplashCoordinator.swift */; };
+		703B93B02DF21E3300EC7BE0 /* NetworkChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93AF2DF21E3300EC7BE0 /* NetworkChecker.swift */; };
+		703B93B22DF21E3700EC7BE0 /* DefaultNetworkChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93B12DF21E3700EC7BE0 /* DefaultNetworkChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,12 +51,17 @@
 		703B936C2DF20BDC00EC7BE0 /* MovieDetailDTO+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieDetailDTO+Mapper.swift"; sourceTree = "<group>"; };
 		703B93712DF20C1A00EC7BE0 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 		703B93742DF20C2200EC7BE0 /* MovieRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryImpl.swift; sourceTree = "<group>"; };
-		703B93792DF20C7200EC7BE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		703B93842DF20CBF00EC7BE0 /* DefaultNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkService.swift; sourceTree = "<group>"; };
 		703B93852DF20CBF00EC7BE0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		703B938A2DF20E8200EC7BE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		703B93952DF210B000EC7BE0 /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
 		703B93992DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteConfigService.swift; sourceTree = "<group>"; };
+		703B93A32DF214AE00EC7BE0 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		703B93A72DF2167700EC7BE0 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		703B93A92DF218F800EC7BE0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		703B93AD2DF21CBA00EC7BE0 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		703B93AF2DF21E3300EC7BE0 /* NetworkChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkChecker.swift; sourceTree = "<group>"; };
+		703B93B12DF21E3700EC7BE0 /* DefaultNetworkChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,7 @@
 			children = (
 				703B93382DF2086E00EC7BE0 /* AppDelegate.swift */,
 				703B93392DF2086E00EC7BE0 /* SceneDelegate.swift */,
+				703B93A92DF218F800EC7BE0 /* AppCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -191,7 +202,7 @@
 		703B937A2DF20C7200EC7BE0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				703B93792DF20C7200EC7BE0 /* ViewController.swift */,
+				703B93A22DF2148C00EC7BE0 /* Splash */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -208,6 +219,8 @@
 			children = (
 				703B93852DF20CBF00EC7BE0 /* NetworkService.swift */,
 				703B93842DF20CBF00EC7BE0 /* DefaultNetworkService.swift */,
+				703B93B12DF21E3700EC7BE0 /* DefaultNetworkChecker.swift */,
+				703B93AF2DF21E3300EC7BE0 /* NetworkChecker.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -236,6 +249,40 @@
 				703B93962DF210B000EC7BE0 /* RemoteConfig */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		703B939F2DF2148C00EC7BE0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				703B93AD2DF21CBA00EC7BE0 /* SplashCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		703B93A02DF2148C00EC7BE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				703B93A72DF2167700EC7BE0 /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		703B93A12DF2148C00EC7BE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				703B93A32DF214AE00EC7BE0 /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		703B93A22DF2148C00EC7BE0 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				703B93A02DF2148C00EC7BE0 /* View */,
+				703B93A12DF2148C00EC7BE0 /* ViewModel */,
+				703B939F2DF2148C00EC7BE0 /* Coordinator */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,20 +366,25 @@
 			files = (
 				703B939A2DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift in Sources */,
 				703B93422DF2086E00EC7BE0 /* AppDelegate.swift in Sources */,
+				703B93B02DF21E3300EC7BE0 /* NetworkChecker.swift in Sources */,
 				703B935C2DF20B1700EC7BE0 /* MovieDetailDTO.swift in Sources */,
+				703B93A82DF2167700EC7BE0 /* SplashViewController.swift in Sources */,
 				703B93432DF2086E00EC7BE0 /* SceneDelegate.swift in Sources */,
+				703B93AE2DF21CBA00EC7BE0 /* SplashCoordinator.swift in Sources */,
 				703B93982DF210B000EC7BE0 /* RemoteConfigService.swift in Sources */,
+				703B93AA2DF218F800EC7BE0 /* AppCoordinator.swift in Sources */,
 				703B93732DF20C1A00EC7BE0 /* MovieRepository.swift in Sources */,
 				703B936B2DF20BCC00EC7BE0 /* MovieDetail.swift in Sources */,
 				703B935F2DF20B4C00EC7BE0 /* SearchResponseDTO.swift in Sources */,
 				703B93882DF20CBF00EC7BE0 /* DefaultNetworkService.swift in Sources */,
 				703B93892DF20CBF00EC7BE0 /* NetworkService.swift in Sources */,
-				703B937B2DF20C7200EC7BE0 /* ViewController.swift in Sources */,
+				703B93A42DF214AE00EC7BE0 /* SplashViewModel.swift in Sources */,
 				703B936D2DF20BDC00EC7BE0 /* MovieDetailDTO+Mapper.swift in Sources */,
 				703B93612DF20B6000EC7BE0 /* MovieDTO.swift in Sources */,
 				703B93652DF20BA200EC7BE0 /* Movie.swift in Sources */,
 				703B93752DF20C2200EC7BE0 /* MovieRepositoryImpl.swift in Sources */,
 				703B93632DF20B8400EC7BE0 /* MovieDTO+Mapper.swift in Sources */,
+				703B93B22DF21E3700EC7BE0 /* DefaultNetworkChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

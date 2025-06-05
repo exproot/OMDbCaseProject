@@ -1,0 +1,32 @@
+//
+//  SplashCoordinator.swift
+//  OMDbCaseProject
+//
+//  Created by Ertan Yağmur on 5.06.2025.
+//
+
+import UIKit
+
+final class SplashCoordinator {
+
+  weak var navigationController: UINavigationController?
+
+  init(navigationController: UINavigationController?) {
+    self.navigationController = navigationController
+  }
+
+  func makeViewController() -> UIViewController {
+    let remoteConfigService = FirebaseRemoteConfigService()
+    let networkChecker = DefaultNetworkChecker()
+    let splashVM = SplashViewModel(remoteConfigService: remoteConfigService, networkChecker: networkChecker)
+    let splashVC = SplashViewController(viewModel: splashVM)
+
+    splashVM.onProceed = {
+      // TODO: Handle navigation
+      print("Navigation")
+    }
+
+    return splashVC
+  }
+
+}
