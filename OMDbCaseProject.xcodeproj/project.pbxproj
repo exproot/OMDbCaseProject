@@ -20,8 +20,6 @@
 		703B936D2DF20BDC00EC7BE0 /* MovieDetailDTO+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B936C2DF20BDC00EC7BE0 /* MovieDetailDTO+Mapper.swift */; };
 		703B93732DF20C1A00EC7BE0 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93712DF20C1A00EC7BE0 /* MovieRepository.swift */; };
 		703B93752DF20C2200EC7BE0 /* MovieRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93742DF20C2200EC7BE0 /* MovieRepositoryImpl.swift */; };
-		703B93882DF20CBF00EC7BE0 /* DefaultNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93842DF20CBF00EC7BE0 /* DefaultNetworkService.swift */; };
-		703B93892DF20CBF00EC7BE0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93852DF20CBF00EC7BE0 /* NetworkService.swift */; };
 		703B938B2DF20E8200EC7BE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 703B938A2DF20E8200EC7BE0 /* GoogleService-Info.plist */; };
 		703B938E2DF2105500EC7BE0 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 703B938D2DF2105500EC7BE0 /* FirebaseCore */; };
 		703B93902DF2105500EC7BE0 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 703B938F2DF2105500EC7BE0 /* FirebaseRemoteConfig */; };
@@ -31,15 +29,18 @@
 		703B93A82DF2167700EC7BE0 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93A72DF2167700EC7BE0 /* SplashViewController.swift */; };
 		703B93AA2DF218F800EC7BE0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93A92DF218F800EC7BE0 /* AppCoordinator.swift */; };
 		703B93AE2DF21CBA00EC7BE0 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93AD2DF21CBA00EC7BE0 /* SplashCoordinator.swift */; };
-		703B93B02DF21E3300EC7BE0 /* NetworkChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93AF2DF21E3300EC7BE0 /* NetworkChecker.swift */; };
-		703B93B22DF21E3700EC7BE0 /* DefaultNetworkChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93B12DF21E3700EC7BE0 /* DefaultNetworkChecker.swift */; };
+		707E1AE82DF339E5001B7CDC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 707E1AE72DF339E5001B7CDC /* Alamofire */; };
+		707E1AED2DF33B6B001B7CDC /* DefaultNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707E1AEA2DF33B6B001B7CDC /* DefaultNetworkService.swift */; };
+		707E1AEE2DF33B6B001B7CDC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707E1AEB2DF33B6B001B7CDC /* NetworkService.swift */; };
+		707E1AF22DF33B78001B7CDC /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707E1AF02DF33B78001B7CDC /* APIConstants.swift */; };
+		707E1AF62DF33B80001B7CDC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707E1AF42DF33B80001B7CDC /* Endpoint.swift */; };
+		707E1AFB2DF33B95001B7CDC /* DefaultNetworkReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707E1AF82DF33B95001B7CDC /* DefaultNetworkReachabilityService.swift */; };
+		707E1AFC2DF33B95001B7CDC /* NetworkReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707E1AF92DF33B95001B7CDC /* NetworkReachabilityService.swift */; };
 		7083CF1C2DF303AD0068B875 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF1B2DF303AD0068B875 /* HomeViewController.swift */; };
 		7083CF1E2DF303C40068B875 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF1D2DF303C40068B875 /* HomeCoordinator.swift */; };
 		7083CF202DF304C60068B875 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF1F2DF304C60068B875 /* HomeViewModel.swift */; };
 		7083CF222DF305310068B875 /* FetchMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF212DF305310068B875 /* FetchMoviesUseCase.swift */; };
 		7083CF242DF3063B0068B875 /* DefaultFetchMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF232DF3063B0068B875 /* DefaultFetchMoviesUseCase.swift */; };
-		7083CF262DF307F10068B875 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF252DF307F10068B875 /* Endpoint.swift */; };
-		7083CF282DF307F60068B875 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF272DF307F60068B875 /* APIConstants.swift */; };
 		7083CF2C2DF3117B0068B875 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */; };
 		7083CF2F2DF3136E0068B875 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF2E2DF3136E0068B875 /* MovieTableViewCell.swift */; };
 		7083CF322DF314E80068B875 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7083CF312DF314E80068B875 /* Kingfisher */; };
@@ -61,8 +62,6 @@
 		703B936C2DF20BDC00EC7BE0 /* MovieDetailDTO+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieDetailDTO+Mapper.swift"; sourceTree = "<group>"; };
 		703B93712DF20C1A00EC7BE0 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 		703B93742DF20C2200EC7BE0 /* MovieRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryImpl.swift; sourceTree = "<group>"; };
-		703B93842DF20CBF00EC7BE0 /* DefaultNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkService.swift; sourceTree = "<group>"; };
-		703B93852DF20CBF00EC7BE0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		703B938A2DF20E8200EC7BE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		703B93952DF210B000EC7BE0 /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
 		703B93992DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteConfigService.swift; sourceTree = "<group>"; };
@@ -70,15 +69,17 @@
 		703B93A72DF2167700EC7BE0 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		703B93A92DF218F800EC7BE0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		703B93AD2DF21CBA00EC7BE0 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
-		703B93AF2DF21E3300EC7BE0 /* NetworkChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkChecker.swift; sourceTree = "<group>"; };
-		703B93B12DF21E3700EC7BE0 /* DefaultNetworkChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkChecker.swift; sourceTree = "<group>"; };
+		707E1AEA2DF33B6B001B7CDC /* DefaultNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkService.swift; sourceTree = "<group>"; };
+		707E1AEB2DF33B6B001B7CDC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		707E1AF02DF33B78001B7CDC /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		707E1AF42DF33B80001B7CDC /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		707E1AF82DF33B95001B7CDC /* DefaultNetworkReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkReachabilityService.swift; sourceTree = "<group>"; };
+		707E1AF92DF33B95001B7CDC /* NetworkReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityService.swift; sourceTree = "<group>"; };
 		7083CF1B2DF303AD0068B875 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7083CF1D2DF303C40068B875 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		7083CF1F2DF304C60068B875 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7083CF212DF305310068B875 /* FetchMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesUseCase.swift; sourceTree = "<group>"; };
 		7083CF232DF3063B0068B875 /* DefaultFetchMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFetchMoviesUseCase.swift; sourceTree = "<group>"; };
-		7083CF252DF307F10068B875 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		7083CF272DF307F60068B875 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		7083CF2E2DF3136E0068B875 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7083CF322DF314E80068B875 /* Kingfisher in Frameworks */,
+				707E1AE82DF339E5001B7CDC /* Alamofire in Frameworks */,
 				703B938E2DF2105500EC7BE0 /* FirebaseCore in Frameworks */,
 				703B93902DF2105500EC7BE0 /* FirebaseRemoteConfig in Frameworks */,
 			);
@@ -241,12 +243,10 @@
 		703B93862DF20CBF00EC7BE0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				703B93852DF20CBF00EC7BE0 /* NetworkService.swift */,
-				7083CF272DF307F60068B875 /* APIConstants.swift */,
-				7083CF252DF307F10068B875 /* Endpoint.swift */,
-				703B93842DF20CBF00EC7BE0 /* DefaultNetworkService.swift */,
-				703B93B12DF21E3700EC7BE0 /* DefaultNetworkChecker.swift */,
-				703B93AF2DF21E3300EC7BE0 /* NetworkChecker.swift */,
+				707E1AFA2DF33B95001B7CDC /* Reachability */,
+				707E1AF52DF33B80001B7CDC /* Endpoint */,
+				707E1AF12DF33B78001B7CDC /* Config */,
+				707E1AEC2DF33B6B001B7CDC /* Service */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -311,6 +311,40 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		707E1AEC2DF33B6B001B7CDC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				707E1AEA2DF33B6B001B7CDC /* DefaultNetworkService.swift */,
+				707E1AEB2DF33B6B001B7CDC /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		707E1AF12DF33B78001B7CDC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				707E1AF02DF33B78001B7CDC /* APIConstants.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		707E1AF52DF33B80001B7CDC /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				707E1AF42DF33B80001B7CDC /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		707E1AFA2DF33B95001B7CDC /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				707E1AF82DF33B95001B7CDC /* DefaultNetworkReachabilityService.swift */,
+				707E1AF92DF33B95001B7CDC /* NetworkReachabilityService.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		7083CF162DF3038A0068B875 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +400,7 @@
 				703B938D2DF2105500EC7BE0 /* FirebaseCore */,
 				703B938F2DF2105500EC7BE0 /* FirebaseRemoteConfig */,
 				7083CF312DF314E80068B875 /* Kingfisher */,
+				707E1AE72DF339E5001B7CDC /* Alamofire */,
 			);
 			productName = OMDbCaseProject;
 			productReference = 703B931E2DF207FC00EC7BE0 /* OMDbCaseProject.app */;
@@ -398,6 +433,7 @@
 			packageReferences = (
 				703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				7083CF302DF314E80068B875 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				707E1AE62DF339E5001B7CDC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 703B931F2DF207FC00EC7BE0 /* Products */;
@@ -429,26 +465,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				703B939A2DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift in Sources */,
-				7083CF262DF307F10068B875 /* Endpoint.swift in Sources */,
+				707E1AF62DF33B80001B7CDC /* Endpoint.swift in Sources */,
 				703B93422DF2086E00EC7BE0 /* AppDelegate.swift in Sources */,
-				703B93B02DF21E3300EC7BE0 /* NetworkChecker.swift in Sources */,
+				707E1AED2DF33B6B001B7CDC /* DefaultNetworkService.swift in Sources */,
+				707E1AEE2DF33B6B001B7CDC /* NetworkService.swift in Sources */,
 				703B935C2DF20B1700EC7BE0 /* MovieDetailDTO.swift in Sources */,
+				707E1AF22DF33B78001B7CDC /* APIConstants.swift in Sources */,
 				703B93A82DF2167700EC7BE0 /* SplashViewController.swift in Sources */,
 				703B93432DF2086E00EC7BE0 /* SceneDelegate.swift in Sources */,
 				703B93AE2DF21CBA00EC7BE0 /* SplashCoordinator.swift in Sources */,
-				7083CF282DF307F60068B875 /* APIConstants.swift in Sources */,
 				7083CF1C2DF303AD0068B875 /* HomeViewController.swift in Sources */,
 				703B93982DF210B000EC7BE0 /* RemoteConfigService.swift in Sources */,
 				703B93AA2DF218F800EC7BE0 /* AppCoordinator.swift in Sources */,
 				703B93732DF20C1A00EC7BE0 /* MovieRepository.swift in Sources */,
 				703B936B2DF20BCC00EC7BE0 /* MovieDetail.swift in Sources */,
 				703B935F2DF20B4C00EC7BE0 /* SearchResponseDTO.swift in Sources */,
-				703B93882DF20CBF00EC7BE0 /* DefaultNetworkService.swift in Sources */,
-				703B93892DF20CBF00EC7BE0 /* NetworkService.swift in Sources */,
 				7083CF222DF305310068B875 /* FetchMoviesUseCase.swift in Sources */,
 				703B93A42DF214AE00EC7BE0 /* SplashViewModel.swift in Sources */,
 				7083CF2F2DF3136E0068B875 /* MovieTableViewCell.swift in Sources */,
 				7083CF1E2DF303C40068B875 /* HomeCoordinator.swift in Sources */,
+				707E1AFB2DF33B95001B7CDC /* DefaultNetworkReachabilityService.swift in Sources */,
+				707E1AFC2DF33B95001B7CDC /* NetworkReachabilityService.swift in Sources */,
 				703B936D2DF20BDC00EC7BE0 /* MovieDetailDTO+Mapper.swift in Sources */,
 				703B93612DF20B6000EC7BE0 /* MovieDTO.swift in Sources */,
 				7083CF202DF304C60068B875 /* HomeViewModel.swift in Sources */,
@@ -456,7 +493,6 @@
 				703B93652DF20BA200EC7BE0 /* Movie.swift in Sources */,
 				703B93752DF20C2200EC7BE0 /* MovieRepositoryImpl.swift in Sources */,
 				703B93632DF20B8400EC7BE0 /* MovieDTO+Mapper.swift in Sources */,
-				703B93B22DF21E3700EC7BE0 /* DefaultNetworkChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +731,14 @@
 				minimumVersion = 11.14.0;
 			};
 		};
+		707E1AE62DF339E5001B7CDC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 		7083CF302DF314E80068B875 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -715,6 +759,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfig;
+		};
+		707E1AE72DF339E5001B7CDC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 707E1AE62DF339E5001B7CDC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		7083CF312DF314E80068B875 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
