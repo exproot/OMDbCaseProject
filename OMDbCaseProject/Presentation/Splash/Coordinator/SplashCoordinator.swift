@@ -17,7 +17,7 @@ final class SplashCoordinator {
 
   func makeViewController() -> UIViewController {
     let remoteConfigService = FirebaseRemoteConfigService()
-    let networkChecker = DefaultNetworkChecker()
+    let networkChecker = DefaultNetworkReachabilityService()
     let splashVM = SplashViewModel(remoteConfigService: remoteConfigService, networkChecker: networkChecker)
     let splashVC = SplashViewController(viewModel: splashVM)
 

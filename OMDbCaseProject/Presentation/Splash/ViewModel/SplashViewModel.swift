@@ -10,13 +10,13 @@ import Foundation
 final class SplashViewModel {
 
   private let remoteConfigService: RemoteConfigService
-  private let networkChecker: NetworkChecker
+  private let networkChecker: NetworkReachabilityService
 
   var onTitleReady: ((String) -> Void)?
   var onProceed: (() -> Void)?
   var onNetworkError: (() -> Void)?
 
-  init(remoteConfigService: RemoteConfigService, networkChecker: NetworkChecker) {
+  init(remoteConfigService: RemoteConfigService, networkChecker: NetworkReachabilityService) {
     self.remoteConfigService = remoteConfigService
     self.networkChecker = networkChecker
   }
