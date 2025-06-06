@@ -21,12 +21,16 @@ final class SplashCoordinator {
     let splashVM = SplashViewModel(remoteConfigService: remoteConfigService, networkChecker: networkChecker)
     let splashVC = SplashViewController(viewModel: splashVM)
 
-    splashVM.onProceed = {
-      // TODO: Handle navigation
-      print("Navigation")
-    }
+    splashVM.onProceed = showHome
 
     return splashVC
+  }
+
+  private func showHome() {
+    let homeCoordinator = HomeCoordinator(navigationController: navigationController)
+    let homeVC = homeCoordinator.makeViewController()
+
+    navigationController?.setViewControllers([homeVC], animated: true)
   }
 
 }

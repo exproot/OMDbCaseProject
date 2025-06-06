@@ -7,16 +7,34 @@
 
 import Foundation
 
-final class MovieRepositoryImpl {
+final class MovieRepositoryImpl: MovieRepository {
 
-  final class MovieRepositoryImpl: MovieRepository {
-    func searchMovies(by title: String, completion: @escaping (Result<[Movie], Error>) -> Void) {
-      // TODO: Implement OMDb API call
+  private let networkService: NetworkService
+
+  init(networkService: NetworkService) {
+    self.networkService = networkService
+  }
+
+  func searchMovies(by title: String, completion: @escaping (Result<[Movie], Error>) -> Void) {
+    guard let url = Endpoint.search(title: title).url else {
+      completion(.failure(URLError(.badURL)))
+      return
     }
 
-    func fetchMovieDetail(imdbID: String, completion: @escaping (Result<MovieDetail, Error>) -> Void) {
-      // TODO: Implement OMDb API call
+    networkService.request(endpoint: url) { (result: Result<SearchResponseDTO, Error>) in
+      switch result {
+      case .success(let dto):
+        let movies = dto.search?.map { $0.toDomain() } ?? []
+        completion(.success(movies))
+
+      case .failure(let error):
+        completion(.failure(error))
+      }
     }
   }
-  
+
+  func fetchMovieDetail(imdbID: String, completion: @escaping (Result<MovieDetail, Error>) -> Void) {
+    // TODO: Implement OMDb API call
+  }
+
 }
