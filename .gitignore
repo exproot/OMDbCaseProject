@@ -28,3 +28,6 @@ GoogleService-Info.plist
 # User-specific
 .DS_Store
 *.orig
+
+# Secrets
+*.xcconfig

@@ -33,6 +33,16 @@
 		703B93AE2DF21CBA00EC7BE0 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93AD2DF21CBA00EC7BE0 /* SplashCoordinator.swift */; };
 		703B93B02DF21E3300EC7BE0 /* NetworkChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93AF2DF21E3300EC7BE0 /* NetworkChecker.swift */; };
 		703B93B22DF21E3700EC7BE0 /* DefaultNetworkChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93B12DF21E3700EC7BE0 /* DefaultNetworkChecker.swift */; };
+		7083CF1C2DF303AD0068B875 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF1B2DF303AD0068B875 /* HomeViewController.swift */; };
+		7083CF1E2DF303C40068B875 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF1D2DF303C40068B875 /* HomeCoordinator.swift */; };
+		7083CF202DF304C60068B875 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF1F2DF304C60068B875 /* HomeViewModel.swift */; };
+		7083CF222DF305310068B875 /* FetchMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF212DF305310068B875 /* FetchMoviesUseCase.swift */; };
+		7083CF242DF3063B0068B875 /* DefaultFetchMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF232DF3063B0068B875 /* DefaultFetchMoviesUseCase.swift */; };
+		7083CF262DF307F10068B875 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF252DF307F10068B875 /* Endpoint.swift */; };
+		7083CF282DF307F60068B875 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF272DF307F60068B875 /* APIConstants.swift */; };
+		7083CF2C2DF3117B0068B875 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */; };
+		7083CF2F2DF3136E0068B875 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF2E2DF3136E0068B875 /* MovieTableViewCell.swift */; };
+		7083CF322DF314E80068B875 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7083CF312DF314E80068B875 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +72,15 @@
 		703B93AD2DF21CBA00EC7BE0 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		703B93AF2DF21E3300EC7BE0 /* NetworkChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkChecker.swift; sourceTree = "<group>"; };
 		703B93B12DF21E3700EC7BE0 /* DefaultNetworkChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkChecker.swift; sourceTree = "<group>"; };
+		7083CF1B2DF303AD0068B875 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7083CF1D2DF303C40068B875 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		7083CF1F2DF304C60068B875 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7083CF212DF305310068B875 /* FetchMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesUseCase.swift; sourceTree = "<group>"; };
+		7083CF232DF3063B0068B875 /* DefaultFetchMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFetchMoviesUseCase.swift; sourceTree = "<group>"; };
+		7083CF252DF307F10068B875 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7083CF272DF307F60068B875 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		7083CF2E2DF3136E0068B875 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7083CF322DF314E80068B875 /* Kingfisher in Frameworks */,
 				703B938E2DF2105500EC7BE0 /* FirebaseCore in Frameworks */,
 				703B93902DF2105500EC7BE0 /* FirebaseRemoteConfig in Frameworks */,
 			);
@@ -110,6 +130,7 @@
 				703B933B2DF2086E00EC7BE0 /* Assets.xcassets */,
 				703B933C2DF2086E00EC7BE0 /* Info.plist */,
 				703B933E2DF2086E00EC7BE0 /* LaunchScreen.storyboard */,
+				7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -195,6 +216,8 @@
 		703B93772DF20C5F00EC7BE0 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				7083CF212DF305310068B875 /* FetchMoviesUseCase.swift */,
+				7083CF232DF3063B0068B875 /* DefaultFetchMoviesUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -202,6 +225,7 @@
 		703B937A2DF20C7200EC7BE0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7083CF192DF3038A0068B875 /* Home */,
 				703B93A22DF2148C00EC7BE0 /* Splash */,
 			);
 			path = Presentation;
@@ -218,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				703B93852DF20CBF00EC7BE0 /* NetworkService.swift */,
+				7083CF272DF307F60068B875 /* APIConstants.swift */,
+				7083CF252DF307F10068B875 /* Endpoint.swift */,
 				703B93842DF20CBF00EC7BE0 /* DefaultNetworkService.swift */,
 				703B93B12DF21E3700EC7BE0 /* DefaultNetworkChecker.swift */,
 				703B93AF2DF21E3300EC7BE0 /* NetworkChecker.swift */,
@@ -285,6 +311,41 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		7083CF162DF3038A0068B875 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7083CF1D2DF303C40068B875 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7083CF172DF3038A0068B875 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7083CF1B2DF303AD0068B875 /* HomeViewController.swift */,
+				7083CF2E2DF3136E0068B875 /* MovieTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7083CF182DF3038A0068B875 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7083CF1F2DF304C60068B875 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7083CF192DF3038A0068B875 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7083CF172DF3038A0068B875 /* Views */,
+				7083CF182DF3038A0068B875 /* ViewModel */,
+				7083CF162DF3038A0068B875 /* Coordinator */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,6 +365,7 @@
 			packageProductDependencies = (
 				703B938D2DF2105500EC7BE0 /* FirebaseCore */,
 				703B938F2DF2105500EC7BE0 /* FirebaseRemoteConfig */,
+				7083CF312DF314E80068B875 /* Kingfisher */,
 			);
 			productName = OMDbCaseProject;
 			productReference = 703B931E2DF207FC00EC7BE0 /* OMDbCaseProject.app */;
@@ -335,6 +397,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7083CF302DF314E80068B875 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 703B931F2DF207FC00EC7BE0 /* Products */;
@@ -351,6 +414,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7083CF2C2DF3117B0068B875 /* Secrets.xcconfig in Resources */,
 				703B93452DF2086E00EC7BE0 /* Assets.xcassets in Resources */,
 				703B93472DF2086E00EC7BE0 /* LaunchScreen.storyboard in Resources */,
 				703B938B2DF20E8200EC7BE0 /* GoogleService-Info.plist in Resources */,
@@ -365,12 +429,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				703B939A2DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift in Sources */,
+				7083CF262DF307F10068B875 /* Endpoint.swift in Sources */,
 				703B93422DF2086E00EC7BE0 /* AppDelegate.swift in Sources */,
 				703B93B02DF21E3300EC7BE0 /* NetworkChecker.swift in Sources */,
 				703B935C2DF20B1700EC7BE0 /* MovieDetailDTO.swift in Sources */,
 				703B93A82DF2167700EC7BE0 /* SplashViewController.swift in Sources */,
 				703B93432DF2086E00EC7BE0 /* SceneDelegate.swift in Sources */,
 				703B93AE2DF21CBA00EC7BE0 /* SplashCoordinator.swift in Sources */,
+				7083CF282DF307F60068B875 /* APIConstants.swift in Sources */,
+				7083CF1C2DF303AD0068B875 /* HomeViewController.swift in Sources */,
 				703B93982DF210B000EC7BE0 /* RemoteConfigService.swift in Sources */,
 				703B93AA2DF218F800EC7BE0 /* AppCoordinator.swift in Sources */,
 				703B93732DF20C1A00EC7BE0 /* MovieRepository.swift in Sources */,
@@ -378,9 +445,14 @@
 				703B935F2DF20B4C00EC7BE0 /* SearchResponseDTO.swift in Sources */,
 				703B93882DF20CBF00EC7BE0 /* DefaultNetworkService.swift in Sources */,
 				703B93892DF20CBF00EC7BE0 /* NetworkService.swift in Sources */,
+				7083CF222DF305310068B875 /* FetchMoviesUseCase.swift in Sources */,
 				703B93A42DF214AE00EC7BE0 /* SplashViewModel.swift in Sources */,
+				7083CF2F2DF3136E0068B875 /* MovieTableViewCell.swift in Sources */,
+				7083CF1E2DF303C40068B875 /* HomeCoordinator.swift in Sources */,
 				703B936D2DF20BDC00EC7BE0 /* MovieDetailDTO+Mapper.swift in Sources */,
 				703B93612DF20B6000EC7BE0 /* MovieDTO.swift in Sources */,
+				7083CF202DF304C60068B875 /* HomeViewModel.swift in Sources */,
+				7083CF242DF3063B0068B875 /* DefaultFetchMoviesUseCase.swift in Sources */,
 				703B93652DF20BA200EC7BE0 /* Movie.swift in Sources */,
 				703B93752DF20C2200EC7BE0 /* MovieRepositoryImpl.swift in Sources */,
 				703B93632DF20B8400EC7BE0 /* MovieDTO+Mapper.swift in Sources */,
@@ -404,6 +476,7 @@
 /* Begin XCBuildConfiguration section */
 		703B93322DF207FD00EC7BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -437,6 +510,7 @@
 		};
 		703B93332DF207FD00EC7BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,6 +544,7 @@
 		};
 		703B93342DF207FD00EC7BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -533,6 +608,7 @@
 		};
 		703B93352DF207FD00EC7BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -619,6 +695,14 @@
 				minimumVersion = 11.14.0;
 			};
 		};
+		7083CF302DF314E80068B875 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -631,6 +715,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfig;
+		};
+		7083CF312DF314E80068B875 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7083CF302DF314E80068B875 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
