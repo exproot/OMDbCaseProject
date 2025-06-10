@@ -15,14 +15,21 @@ final class HomeCoordinator {
     self.navigationController = navigationController
   }
 
-  func makeViewController() -> UIViewController {
+  func makeViewController() -> HomeViewController {
     let networkService = DefaultNetworkService()
     let movieRepository = MovieRepositoryImpl(networkService: networkService)
     let fetchMoviesUseCase = DefaultFetchMoviesUseCase(repository: movieRepository)
-    let homeVM = HomeViewModel(fetchMoviesUseCase: fetchMoviesUseCase)
+    let homeVM = HomeViewModel(fetchMoviesUseCase: fetchMoviesUseCase, onMovieSelected: showMovieDetail)
 
     let homeVC = HomeViewController(viewModel: homeVM)
     return homeVC
+  }
+
+  func showMovieDetail(imdbID: String) {
+    let detailCoordinator = MovieDetailCoordinator(navigationController: navigationController, imdbID: imdbID)
+    let detailVC = detailCoordinator.makeViewController()
+
+    navigationController?.pushViewController(detailVC, animated: true)
   }
 
 }

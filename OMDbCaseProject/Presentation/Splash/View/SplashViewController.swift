@@ -10,7 +10,9 @@ import UIKit
 final class SplashViewController: UIViewController {
 
   private let viewModel: SplashViewModel
-  private let titleLabel = UILabel()
+
+  // MARK: Controller Lifecycle
+  private let titleLabel = UILabel.make(font: .boldSystemFont(ofSize: 24), alignment: .center)
 
   init(viewModel: SplashViewModel) {
     self.viewModel = viewModel
@@ -37,26 +39,16 @@ final class SplashViewController: UIViewController {
 
     viewModel.onNetworkError = { [weak self] in
       DispatchQueue.main.async {
-        self?.showNetworkError()
+        self?.showAlert(title: "Bağlantı Hatası", message: "Internet bağlantısı yok.", buttonTitle: "Tamam")
       }
     }
   }
 
-  private func showNetworkError() {
-    let alert = UIAlertController(title: "Bağlantı Hatası", message: "Internet bağlantısı yok.", preferredStyle: .alert)
-
-    alert.addAction(UIAlertAction(title: "Tamam", style: .default))
-    present(alert, animated: true)
-  }
-
+  // MARK: UI Setup
   private func setupUI() {
     view.backgroundColor = .systemBackground
-
-    titleLabel.textAlignment = .center
-    titleLabel.font = .boldSystemFont(ofSize: 24)
-    titleLabel.translatesAutoresizingMaskIntoConstraints = false
-
     view.addSubview(titleLabel)
+
     NSLayoutConstraint.activate([
       titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)

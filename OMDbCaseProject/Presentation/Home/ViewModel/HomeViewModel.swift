@@ -20,9 +20,14 @@ final class HomeViewModel {
   private(set) var movies: [Movie] = []
 
   var onStateChange: ((HomeViewState) -> Void)?
+  var onMovieSelected: ((String) -> Void)?
 
-  init(fetchMoviesUseCase: FetchMoviesUseCase) {
+  init(
+    fetchMoviesUseCase: FetchMoviesUseCase,
+    onMovieSelected: (@escaping (String) -> Void)
+  ) {
     self.fetchMoviesUseCase = fetchMoviesUseCase
+    self.onMovieSelected = onMovieSelected
   }
 
   func searchMovies(query: String) {

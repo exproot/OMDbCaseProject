@@ -9,10 +9,11 @@ import Foundation
 
 enum Endpoint {
   case search(title: String)
+  case detail(imdbID: String)
 
   var path: String {
     switch self {
-    case .search:
+    case .search, .detail:
       return ""
     }
   }
@@ -23,6 +24,12 @@ enum Endpoint {
       return [
         URLQueryItem(name: "apikey", value: APIConstants.apiKey),
         URLQueryItem(name: "s", value: title)
+      ]
+
+    case .detail(let imdbID):
+      return [
+        URLQueryItem(name: "apikey", value: APIConstants.apiKey),
+        URLQueryItem(name: "i", value: imdbID)
       ]
     }
   }
