@@ -31,7 +31,6 @@
 		703B938E2DF2105500EC7BE0 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 703B938D2DF2105500EC7BE0 /* FirebaseCore */; };
 		703B93902DF2105500EC7BE0 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 703B938F2DF2105500EC7BE0 /* FirebaseRemoteConfig */; };
 		703B93982DF210B000EC7BE0 /* RemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93952DF210B000EC7BE0 /* RemoteConfigService.swift */; };
-		703B939A2DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93992DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift */; };
 		703B93A42DF214AE00EC7BE0 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93A32DF214AE00EC7BE0 /* SplashViewModel.swift */; };
 		703B93A82DF2167700EC7BE0 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93A72DF2167700EC7BE0 /* SplashViewController.swift */; };
 		703B93AA2DF218F800EC7BE0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93A92DF218F800EC7BE0 /* AppCoordinator.swift */; };
@@ -54,6 +53,10 @@
 		70E8D5AB2DF83C7800B1EF1E /* UIStackView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5AA2DF83C7800B1EF1E /* UIStackView+Factory.swift */; };
 		70E8D5AD2DF83C8600B1EF1E /* UIImageView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5AC2DF83C8600B1EF1E /* UIImageView+Factory.swift */; };
 		70E8D5AF2DF83C9400B1EF1E /* UIActivityIndicatorView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5AE2DF83C9400B1EF1E /* UIActivityIndicatorView+Factory.swift */; };
+		70E8D5B22DF848EC00B1EF1E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 70E8D5B12DF848EC00B1EF1E /* FirebaseAnalytics */; };
+		70E8D5B62DF84BBB00B1EF1E /* FirebaseAnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5B52DF84BBB00B1EF1E /* FirebaseAnalyticsService.swift */; };
+		70E8D5BB2DF84BCC00B1EF1E /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5B82DF84BCC00B1EF1E /* AnalyticsService.swift */; };
+		70E8D5BC2DF84BCC00B1EF1E /* FirebaseRemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5B92DF84BCC00B1EF1E /* FirebaseRemoteConfigService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +84,6 @@
 		703B93742DF20C2200EC7BE0 /* MovieRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryImpl.swift; sourceTree = "<group>"; };
 		703B938A2DF20E8200EC7BE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		703B93952DF210B000EC7BE0 /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
-		703B93992DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteConfigService.swift; sourceTree = "<group>"; };
 		703B93A32DF214AE00EC7BE0 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		703B93A72DF2167700EC7BE0 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		703B93A92DF218F800EC7BE0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -102,6 +104,9 @@
 		70E8D5AA2DF83C7800B1EF1E /* UIStackView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Factory.swift"; sourceTree = "<group>"; };
 		70E8D5AC2DF83C8600B1EF1E /* UIImageView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Factory.swift"; sourceTree = "<group>"; };
 		70E8D5AE2DF83C9400B1EF1E /* UIActivityIndicatorView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Factory.swift"; sourceTree = "<group>"; };
+		70E8D5B52DF84BBB00B1EF1E /* FirebaseAnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsService.swift; sourceTree = "<group>"; };
+		70E8D5B82DF84BCC00B1EF1E /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		70E8D5B92DF84BCC00B1EF1E /* FirebaseRemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteConfigService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +117,7 @@
 				7083CF322DF314E80068B875 /* Kingfisher in Frameworks */,
 				707E1AE82DF339E5001B7CDC /* Alamofire in Frameworks */,
 				703B938E2DF2105500EC7BE0 /* FirebaseCore in Frameworks */,
+				70E8D5B22DF848EC00B1EF1E /* FirebaseAnalytics in Frameworks */,
 				703B93902DF2105500EC7BE0 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				703B93412DF2086E00EC7BE0 /* OMDbCaseProject */,
+				70E8D5B02DF848EC00B1EF1E /* Frameworks */,
 				703B931F2DF207FC00EC7BE0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -338,7 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				703B93952DF210B000EC7BE0 /* RemoteConfigService.swift */,
-				703B93992DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift */,
+				70E8D5B92DF84BCC00B1EF1E /* FirebaseRemoteConfigService.swift */,
 			);
 			path = RemoteConfig;
 			sourceTree = "<group>";
@@ -346,6 +353,7 @@
 		703B93972DF210B000EC7BE0 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				70E8D5BA2DF84BCC00B1EF1E /* Analytics */,
 				703B93962DF210B000EC7BE0 /* RemoteConfig */,
 			);
 			path = Firebase;
@@ -466,6 +474,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		70E8D5B02DF848EC00B1EF1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70E8D5BA2DF84BCC00B1EF1E /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				70E8D5B82DF84BCC00B1EF1E /* AnalyticsService.swift */,
+				70E8D5B52DF84BBB00B1EF1E /* FirebaseAnalyticsService.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -487,6 +511,7 @@
 				703B938F2DF2105500EC7BE0 /* FirebaseRemoteConfig */,
 				7083CF312DF314E80068B875 /* Kingfisher */,
 				707E1AE72DF339E5001B7CDC /* Alamofire */,
+				70E8D5B12DF848EC00B1EF1E /* FirebaseAnalytics */,
 			);
 			productName = OMDbCaseProject;
 			productReference = 703B931E2DF207FC00EC7BE0 /* OMDbCaseProject.app */;
@@ -550,7 +575,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				703B939A2DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift in Sources */,
 				707E1AF62DF33B80001B7CDC /* Endpoint.swift in Sources */,
 				70E8D5A72DF838B400B1EF1E /* UIViewController+Alert.swift in Sources */,
 				703B93422DF2086E00EC7BE0 /* AppDelegate.swift in Sources */,
@@ -561,6 +585,8 @@
 				703B93A82DF2167700EC7BE0 /* SplashViewController.swift in Sources */,
 				703B93432DF2086E00EC7BE0 /* SceneDelegate.swift in Sources */,
 				70E8D5AF2DF83C9400B1EF1E /* UIActivityIndicatorView+Factory.swift in Sources */,
+				70E8D5BB2DF84BCC00B1EF1E /* AnalyticsService.swift in Sources */,
+				70E8D5BC2DF84BCC00B1EF1E /* FirebaseRemoteConfigService.swift in Sources */,
 				703B93AE2DF21CBA00EC7BE0 /* SplashCoordinator.swift in Sources */,
 				70E8D5AB2DF83C7800B1EF1E /* UIStackView+Factory.swift in Sources */,
 				700CB41B2DF341CA008EF32C /* MovieDetailCoordinator.swift in Sources */,
@@ -570,6 +596,7 @@
 				703B93732DF20C1A00EC7BE0 /* MovieRepository.swift in Sources */,
 				70E8D5AD2DF83C8600B1EF1E /* UIImageView+Factory.swift in Sources */,
 				703B936B2DF20BCC00EC7BE0 /* MovieDetail.swift in Sources */,
+				70E8D5B62DF84BBB00B1EF1E /* FirebaseAnalyticsService.swift in Sources */,
 				703B935F2DF20B4C00EC7BE0 /* SearchResponseDTO.swift in Sources */,
 				703B93A42DF214AE00EC7BE0 /* SplashViewModel.swift in Sources */,
 				7083CF2F2DF3136E0068B875 /* MovieTableViewCell.swift in Sources */,
@@ -865,6 +892,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7083CF302DF314E80068B875 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		70E8D5B12DF848EC00B1EF1E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -20,9 +20,10 @@ final class MovieDetailCoordinator {
 
   func makeViewController() -> MovieDetailViewController {
     let networkService = DefaultNetworkService()
+    let analyticsService = FirebaseAnalyticsService()
     let movieRepository = MovieRepositoryImpl(networkService: networkService)
     let fetchMovieDetailUseCase = DefaultFetchMovieDetailUseCase(repository: movieRepository)
-    let movieDetailVM = MovieDetailViewModel(imdbID: imdbID, fetchMovieDetailUseCase: fetchMovieDetailUseCase)
+    let movieDetailVM = MovieDetailViewModel(imdbID: imdbID, fetchMovieDetailUseCase: fetchMovieDetailUseCase, analyticsService: analyticsService)
     let movieDetailVC = MovieDetailViewController(viewModel: movieDetailVM)
 
     return movieDetailVC
