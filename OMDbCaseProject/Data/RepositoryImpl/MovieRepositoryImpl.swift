@@ -34,7 +34,21 @@ final class MovieRepositoryImpl: MovieRepository {
   }
 
   func fetchMovieDetail(imdbID: String, completion: @escaping (Result<MovieDetail, Error>) -> Void) {
-    // TODO: Implement OMDb API call
+    guard let url = Endpoint.detail(imdbID: imdbID).url else {
+      completion(.failure(URLError(.badURL)))
+      return
+    }
+
+    networkService.request(endpoint: url) { (result: Result<MovieDetailDTO, Error>) in
+      switch result {
+      case .success(let dto):
+        let detail = dto.toDomain()
+        completion(.success(detail))
+
+      case .failure(let error):
+        completion(.failure(error))
+      }
+    }
   }
 
 }

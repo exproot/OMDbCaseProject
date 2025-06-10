@@ -14,10 +14,10 @@ final class HomeViewController: UIViewController {
   // MARK: UI Components
   private let searchBar = UISearchBar()
   private let tableView = UITableView()
-  private let loadingIndicator = UIActivityIndicatorView(style: .medium)
-  private let messageLabel = UILabel()
+  private let loadingIndicator = UIActivityIndicatorView.make()
+  private let messageLabel = UILabel.make(font: .systemFont(ofSize: 16), alignment: .center, numberOfLines: 0, textColor: .secondaryLabel)
 
-  // MARK: View Lifecycle
+  // MARK: Controller Lifecycle
   init(viewModel: HomeViewModel) {
     self.viewModel = viewModel
     super.init(nibName: nil, bundle: nil)
@@ -71,19 +71,14 @@ final class HomeViewController: UIViewController {
     navigationItem.titleView = searchBar
 
     tableView.dataSource = self
+    tableView.delegate = self
     tableView.register(MovieTableViewCell.self, forCellReuseIdentifier: MovieTableViewCell.reuseIdentifier)
     tableView.translatesAutoresizingMaskIntoConstraints = false
-    view.addSubview(tableView)
 
-    loadingIndicator.hidesWhenStopped = true
-    loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(tableView)
     view.addSubview(loadingIndicator)
 
-    messageLabel.textAlignment = .center
-    messageLabel.numberOfLines = 0
-    messageLabel.textColor = .secondaryLabel
     messageLabel.isHidden = true
-    messageLabel.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(messageLabel)
 
     NSLayoutConstraint.activate([
@@ -110,6 +105,20 @@ extension HomeViewController: UISearchBarDelegate {
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     searchBar.resignFirstResponder()
     viewModel.searchMovies(query: searchBar.text ?? "")
+  }
+
+}
+
+// MARK: UITableViewDelegate
+extension HomeViewController: UITableViewDelegate {
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard indexPath.row < viewModel.numberOfMovies else { return }
+
+    let movie = viewModel.movie(at: indexPath.row)
+
+    viewModel.onMovieSelected?(movie.id)
+    tableView.deselectRow(at: indexPath, animated: true)
   }
 
 }

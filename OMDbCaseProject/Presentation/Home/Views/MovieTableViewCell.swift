@@ -13,45 +13,11 @@ final class MovieTableViewCell: UITableViewCell {
   static let reuseIdentifier = String(describing: MovieTableViewCell.self)
 
   // MARK: UI Components
-  private let posterImageView: UIImageView = {
-    let imageView = UIImageView()
-    imageView.contentMode = .scaleAspectFill
-    imageView.clipsToBounds = true
-    imageView.translatesAutoresizingMaskIntoConstraints = false
-    imageView.layer.cornerRadius = 8
-    return imageView
-  }()
-
-  private let titleLabel: UILabel = {
-    let label = UILabel()
-    label.font = .boldSystemFont(ofSize: 16)
-    label.numberOfLines = 0
-    return label
-  }()
-
-  private let yearLabel: UILabel = {
-    let label = UILabel()
-    label.font = .systemFont(ofSize: 14)
-    label.textColor = .secondaryLabel
-    return label
-  }()
-
-  private let textStack: UIStackView = {
-    let stack = UIStackView()
-    stack.axis = .vertical
-    stack.spacing = 4
-    stack.translatesAutoresizingMaskIntoConstraints = false
-    return stack
-  }()
-
-  private let containerStack: UIStackView = {
-    let stack = UIStackView()
-    stack.axis = .horizontal
-    stack.spacing = 16
-    stack.alignment = .top
-    stack.translatesAutoresizingMaskIntoConstraints = false
-    return stack
-  }()
+  private let posterImageView = UIImageView.make(contentMode: .scaleAspectFill, clipsToBounds: true, cornerRadius: 8)
+  private let titleLabel = UILabel.make(font: .boldSystemFont(ofSize: 16), numberOfLines: 0)
+  private let yearLabel = UILabel.make(font: .systemFont(ofSize: 14), textColor: .secondaryLabel)
+  private let textStack = UIStackView.vertical(spacing: 4)
+  private let containerStack = UIStackView.horizontal(spacing: 16, alignment: .top)
 
   // MARK: Cell Lifecycle
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
