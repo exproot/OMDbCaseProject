@@ -21,7 +21,12 @@ final class MovieDetailCoordinator {
 
   func makeViewController() -> MovieDetailViewController {
     let fetchMovieDetailUseCase = DC.shared.resolve(type: .closureBased, for: FetchMovieDetailUseCase.self)
-    let movieDetailVM = MovieDetailViewModel(imdbID: imdbID, fetchMovieDetailUseCase: fetchMovieDetailUseCase)
+    let analyticsService = DC.shared.resolve(type: .singleInstance, for: AnalyticsService.self)
+    let movieDetailVM = MovieDetailViewModel(
+      imdbID: imdbID,
+      fetchMovieDetailUseCase: fetchMovieDetailUseCase,
+      analyticsService: analyticsService
+    )
 
     return MovieDetailViewController(viewModel: movieDetailVM)
   }
