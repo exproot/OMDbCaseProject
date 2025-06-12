@@ -51,6 +51,9 @@
 		7083CF2C2DF3117B0068B875 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */; };
 		7083CF2F2DF3136E0068B875 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7083CF2E2DF3136E0068B875 /* MovieTableViewCell.swift */; };
 		7083CF322DF314E80068B875 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7083CF312DF314E80068B875 /* Kingfisher */; };
+		70CB350E2DFB69EF001CE32F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 70CB350D2DFB69EF001CE32F /* FirebaseAnalytics */; };
+		70CB35172DFB6A4E001CE32F /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB35142DFB6A4E001CE32F /* AnalyticsService.swift */; };
+		70CB35182DFB6A4E001CE32F /* FirebaseAnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB35152DFB6A4E001CE32F /* FirebaseAnalyticsService.swift */; };
 		70E8D5A72DF838B400B1EF1E /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5A52DF838B400B1EF1E /* UIViewController+Alert.swift */; };
 		70E8D5A92DF83C6A00B1EF1E /* UILabel+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5A82DF83C6A00B1EF1E /* UILabel+Factory.swift */; };
 		70E8D5AB2DF83C7800B1EF1E /* UIStackView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5AA2DF83C7800B1EF1E /* UIStackView+Factory.swift */; };
@@ -101,6 +104,8 @@
 		7083CF1F2DF304C60068B875 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7083CF2B2DF3117B0068B875 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		7083CF2E2DF3136E0068B875 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		70CB35142DFB6A4E001CE32F /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		70CB35152DFB6A4E001CE32F /* FirebaseAnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsService.swift; sourceTree = "<group>"; };
 		70E8D5A52DF838B400B1EF1E /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		70E8D5A82DF83C6A00B1EF1E /* UILabel+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Factory.swift"; sourceTree = "<group>"; };
 		70E8D5AA2DF83C7800B1EF1E /* UIStackView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Factory.swift"; sourceTree = "<group>"; };
@@ -114,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70CB350E2DFB69EF001CE32F /* FirebaseAnalytics in Frameworks */,
 				7083CF322DF314E80068B875 /* Kingfisher in Frameworks */,
 				704147102DFB242600A816B6 /* DependencyContainer in Frameworks */,
 				707E1AE82DF339E5001B7CDC /* Alamofire in Frameworks */,
@@ -356,6 +362,7 @@
 		703B93972DF210B000EC7BE0 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				70CB35162DFB6A4E001CE32F /* Analytics */,
 				703B93962DF210B000EC7BE0 /* RemoteConfig */,
 			);
 			path = Firebase;
@@ -464,6 +471,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		70CB35162DFB6A4E001CE32F /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				70CB35142DFB6A4E001CE32F /* AnalyticsService.swift */,
+				70CB35152DFB6A4E001CE32F /* FirebaseAnalyticsService.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
 		70E8D5A62DF838B400B1EF1E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +522,7 @@
 				707E1AE72DF339E5001B7CDC /* Alamofire */,
 				70E8D5BE2DF8552700B1EF1E /* FirebaseMessaging */,
 				7041470F2DFB242600A816B6 /* DependencyContainer */,
+				70CB350D2DFB69EF001CE32F /* FirebaseAnalytics */,
 			);
 			productName = OMDbCaseProject;
 			productReference = 703B931E2DF207FC00EC7BE0 /* OMDbCaseProject.app */;
@@ -571,6 +588,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				703B939A2DF2126F00EC7BE0 /* FirebaseRemoteConfigService.swift in Sources */,
+				70CB35172DFB6A4E001CE32F /* AnalyticsService.swift in Sources */,
+				70CB35182DFB6A4E001CE32F /* FirebaseAnalyticsService.swift in Sources */,
 				707E1AF62DF33B80001B7CDC /* Endpoint.swift in Sources */,
 				70E8D5A72DF838B400B1EF1E /* UIViewController+Alert.swift in Sources */,
 				703B93422DF2086E00EC7BE0 /* AppDelegate.swift in Sources */,
@@ -901,6 +920,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7083CF302DF314E80068B875 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		70CB350D2DFB69EF001CE32F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 		70E8D5BE2DF8552700B1EF1E /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;

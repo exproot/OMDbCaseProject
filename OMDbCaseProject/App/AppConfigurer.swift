@@ -23,6 +23,7 @@ enum AppConfigurer {
     DC.shared.register(type: .singleInstance(DefaultNetworkService()), for: NetworkService.self)
     DC.shared.register(type: .singleInstance(FirebaseRemoteConfigService()), for: RemoteConfigService.self)
     DC.shared.register(type: .singleInstance(DefaultNetworkReachabilityService()), for: NetworkReachabilityService.self)
+    DC.shared.register(type: .singleInstance(FirebaseAnalyticsService()), for: AnalyticsService.self)
 
     DC.shared.register(type: .closureBased({
       let networkService = DC.shared.resolve(type: .singleInstance, for: NetworkService.self)
