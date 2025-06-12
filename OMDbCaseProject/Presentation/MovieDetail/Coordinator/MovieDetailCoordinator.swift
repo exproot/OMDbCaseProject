@@ -5,6 +5,7 @@
 //  Created by Ertan Yağmur on 6.06.2025.
 //
 
+import DependencyContainer
 import UIKit
 
 final class MovieDetailCoordinator {
@@ -19,13 +20,10 @@ final class MovieDetailCoordinator {
   }
 
   func makeViewController() -> MovieDetailViewController {
-    let networkService = DefaultNetworkService()
-    let movieRepository = MovieRepositoryImpl(networkService: networkService)
-    let fetchMovieDetailUseCase = DefaultFetchMovieDetailUseCase(repository: movieRepository)
+    let fetchMovieDetailUseCase = DC.shared.resolve(type: .closureBased, for: FetchMovieDetailUseCase.self)
     let movieDetailVM = MovieDetailViewModel(imdbID: imdbID, fetchMovieDetailUseCase: fetchMovieDetailUseCase)
-    let movieDetailVC = MovieDetailViewController(viewModel: movieDetailVM)
 
-    return movieDetailVC
+    return MovieDetailViewController(viewModel: movieDetailVM)
   }
 
 }

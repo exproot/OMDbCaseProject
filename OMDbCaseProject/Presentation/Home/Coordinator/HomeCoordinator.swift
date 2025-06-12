@@ -5,6 +5,7 @@
 //  Created by Ertan Yağmur on 6.06.2025.
 //
 
+import DependencyContainer
 import UIKit
 
 final class HomeCoordinator {
@@ -16,13 +17,10 @@ final class HomeCoordinator {
   }
 
   func makeViewController() -> HomeViewController {
-    let networkService = DefaultNetworkService()
-    let movieRepository = MovieRepositoryImpl(networkService: networkService)
-    let fetchMoviesUseCase = DefaultFetchMoviesUseCase(repository: movieRepository)
+    let fetchMoviesUseCase = DC.shared.resolve(type: .closureBased, for: FetchMoviesUseCase.self)
     let homeVM = HomeViewModel(fetchMoviesUseCase: fetchMoviesUseCase, onMovieSelected: showMovieDetail)
 
-    let homeVC = HomeViewController(viewModel: homeVM)
-    return homeVC
+    return HomeViewController(viewModel: homeVM)
   }
 
   func showMovieDetail(imdbID: String) {

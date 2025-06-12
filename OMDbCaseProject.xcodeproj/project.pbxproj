@@ -36,6 +36,8 @@
 		703B93A82DF2167700EC7BE0 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93A72DF2167700EC7BE0 /* SplashViewController.swift */; };
 		703B93AA2DF218F800EC7BE0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93A92DF218F800EC7BE0 /* AppCoordinator.swift */; };
 		703B93AE2DF21CBA00EC7BE0 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B93AD2DF21CBA00EC7BE0 /* SplashCoordinator.swift */; };
+		704147102DFB242600A816B6 /* DependencyContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 7041470F2DFB242600A816B6 /* DependencyContainer */; };
+		704147122DFB244F00A816B6 /* AppConfigurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704147112DFB244F00A816B6 /* AppConfigurer.swift */; };
 		707E1AE82DF339E5001B7CDC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 707E1AE72DF339E5001B7CDC /* Alamofire */; };
 		707E1AED2DF33B6B001B7CDC /* DefaultNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707E1AEA2DF33B6B001B7CDC /* DefaultNetworkService.swift */; };
 		707E1AEE2DF33B6B001B7CDC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707E1AEB2DF33B6B001B7CDC /* NetworkService.swift */; };
@@ -87,6 +89,7 @@
 		703B93A72DF2167700EC7BE0 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		703B93A92DF218F800EC7BE0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		703B93AD2DF21CBA00EC7BE0 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		704147112DFB244F00A816B6 /* AppConfigurer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurer.swift; sourceTree = "<group>"; };
 		707E1AEA2DF33B6B001B7CDC /* DefaultNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkService.swift; sourceTree = "<group>"; };
 		707E1AEB2DF33B6B001B7CDC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		707E1AF02DF33B78001B7CDC /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7083CF322DF314E80068B875 /* Kingfisher in Frameworks */,
+				704147102DFB242600A816B6 /* DependencyContainer in Frameworks */,
 				707E1AE82DF339E5001B7CDC /* Alamofire in Frameworks */,
 				70E8D5BF2DF8552700B1EF1E /* FirebaseMessaging in Frameworks */,
 				703B938E2DF2105500EC7BE0 /* FirebaseCore in Frameworks */,
@@ -197,6 +201,7 @@
 				703B93382DF2086E00EC7BE0 /* AppDelegate.swift */,
 				703B93392DF2086E00EC7BE0 /* SceneDelegate.swift */,
 				703B93A92DF218F800EC7BE0 /* AppCoordinator.swift */,
+				704147112DFB244F00A816B6 /* AppConfigurer.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -500,6 +505,7 @@
 				7083CF312DF314E80068B875 /* Kingfisher */,
 				707E1AE72DF339E5001B7CDC /* Alamofire */,
 				70E8D5BE2DF8552700B1EF1E /* FirebaseMessaging */,
+				7041470F2DFB242600A816B6 /* DependencyContainer */,
 			);
 			productName = OMDbCaseProject;
 			productReference = 703B931E2DF207FC00EC7BE0 /* OMDbCaseProject.app */;
@@ -533,6 +539,7 @@
 				703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				7083CF302DF314E80068B875 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				707E1AE62DF339E5001B7CDC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7041470E2DFB242600A816B6 /* XCRemoteSwiftPackageReference "DependencyContainer" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 703B931F2DF207FC00EC7BE0 /* Products */;
@@ -590,6 +597,7 @@
 				700CB40B2DF33DD9008EF32C /* FetchMovieDetailUseCase.swift in Sources */,
 				700CB4172DF33F2E008EF32C /* MovieDetailViewModel.swift in Sources */,
 				700CB4082DF33DCA008EF32C /* DefaultFetchMoviesUseCase.swift in Sources */,
+				704147122DFB244F00A816B6 /* AppConfigurer.swift in Sources */,
 				700CB4092DF33DCA008EF32C /* FetchMoviesUseCase.swift in Sources */,
 				70E8D5A92DF83C6A00B1EF1E /* UILabel+Factory.swift in Sources */,
 				7083CF1E2DF303C40068B875 /* HomeCoordinator.swift in Sources */,
@@ -842,6 +850,14 @@
 				minimumVersion = 11.14.0;
 			};
 		};
+		7041470E2DFB242600A816B6 /* XCRemoteSwiftPackageReference "DependencyContainer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exproot/DependencyContainer.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		707E1AE62DF339E5001B7CDC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -870,6 +886,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfig;
+		};
+		7041470F2DFB242600A816B6 /* DependencyContainer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7041470E2DFB242600A816B6 /* XCRemoteSwiftPackageReference "DependencyContainer" */;
+			productName = DependencyContainer;
 		};
 		707E1AE72DF339E5001B7CDC /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

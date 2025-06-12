@@ -5,6 +5,7 @@
 //  Created by Ertan Yağmur on 5.06.2025.
 //
 
+import DependencyContainer
 import UIKit
 
 final class SplashCoordinator {
@@ -16,14 +17,13 @@ final class SplashCoordinator {
   }
 
   func makeViewController() -> SplashViewController {
-    let remoteConfigService = FirebaseRemoteConfigService()
-    let networkChecker = DefaultNetworkReachabilityService()
-    let splashVM = SplashViewModel(remoteConfigService: remoteConfigService, networkChecker: networkChecker)
-    let splashVC = SplashViewController(viewModel: splashVM)
+    let remoteConfigService = DC.shared.resolve(type: .singleInstance, for: RemoteConfigService.self)
+    let networkReachability = DC.shared.resolve(type: .singleInstance, for: NetworkReachabilityService.self)
+    let splashVM = SplashViewModel(remoteConfigService: remoteConfigService, networkChecker: networkReachability)
 
     splashVM.onProceed = showHome
 
-    return splashVC
+    return SplashViewController(viewModel: splashVM)
   }
 
   private func showHome() {
