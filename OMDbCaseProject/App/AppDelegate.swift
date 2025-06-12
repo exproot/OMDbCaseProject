@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     FirebaseApp.configure()
+    AppConfigurer.configureDependencies()
 
     UNUserNotificationCenter.current().delegate = self
 
