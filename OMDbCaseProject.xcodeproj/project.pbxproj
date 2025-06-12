@@ -54,6 +54,7 @@
 		70E8D5AB2DF83C7800B1EF1E /* UIStackView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5AA2DF83C7800B1EF1E /* UIStackView+Factory.swift */; };
 		70E8D5AD2DF83C8600B1EF1E /* UIImageView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5AC2DF83C8600B1EF1E /* UIImageView+Factory.swift */; };
 		70E8D5AF2DF83C9400B1EF1E /* UIActivityIndicatorView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D5AE2DF83C9400B1EF1E /* UIActivityIndicatorView+Factory.swift */; };
+		70E8D5BF2DF8552700B1EF1E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 70E8D5BE2DF8552700B1EF1E /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		70E8D5AA2DF83C7800B1EF1E /* UIStackView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Factory.swift"; sourceTree = "<group>"; };
 		70E8D5AC2DF83C8600B1EF1E /* UIImageView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Factory.swift"; sourceTree = "<group>"; };
 		70E8D5AE2DF83C9400B1EF1E /* UIActivityIndicatorView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Factory.swift"; sourceTree = "<group>"; };
+		70E8D5C02DF859F900B1EF1E /* OMDbCaseProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OMDbCaseProject.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			files = (
 				7083CF322DF314E80068B875 /* Kingfisher in Frameworks */,
 				707E1AE82DF339E5001B7CDC /* Alamofire in Frameworks */,
+				70E8D5BF2DF8552700B1EF1E /* FirebaseMessaging in Frameworks */,
 				703B938E2DF2105500EC7BE0 /* FirebaseCore in Frameworks */,
 				703B93902DF2105500EC7BE0 /* FirebaseRemoteConfig in Frameworks */,
 			);
@@ -175,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				703B93412DF2086E00EC7BE0 /* OMDbCaseProject */,
+				70E8D5BD2DF8552700B1EF1E /* Frameworks */,
 				703B931F2DF207FC00EC7BE0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -212,6 +216,7 @@
 		703B93412DF2086E00EC7BE0 /* OMDbCaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				70E8D5C02DF859F900B1EF1E /* OMDbCaseProject.entitlements */,
 				703B933A2DF2086E00EC7BE0 /* App */,
 				703B93872DF20CBF00EC7BE0 /* Core */,
 				703B935B2DF20B1700EC7BE0 /* Data */,
@@ -466,6 +471,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		70E8D5BD2DF8552700B1EF1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -487,6 +499,7 @@
 				703B938F2DF2105500EC7BE0 /* FirebaseRemoteConfig */,
 				7083CF312DF314E80068B875 /* Kingfisher */,
 				707E1AE72DF339E5001B7CDC /* Alamofire */,
+				70E8D5BE2DF8552700B1EF1E /* FirebaseMessaging */,
 			);
 			productName = OMDbCaseProject;
 			productReference = 703B931E2DF207FC00EC7BE0 /* OMDbCaseProject.app */;
@@ -612,6 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OMDbCaseProject/OMDbCaseProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZF77D3H4CR;
@@ -646,6 +660,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OMDbCaseProject/OMDbCaseProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZF77D3H4CR;
@@ -865,6 +880,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7083CF302DF314E80068B875 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		70E8D5BE2DF8552700B1EF1E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 703B938C2DF2105500EC7BE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
